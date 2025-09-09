@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - NEXO UNIFIED</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>NEXO UNIFIED</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="collection.html" class="active">Collections</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Collections</h1>
+            <p>Discover our latest fashion trends</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Items</option>
+                        <option value="shirts">Shirts</option>
+                        <option value="jackets">Jackets</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="dresses">Dresses</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort by:</label>
+                    <select id="sortFilter">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card" data-category="shirts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="Classic White T-Shirt">
+                        <div class="product-overlay">
+                            <a href="product.html" class="btn btn-secondary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic White T-Shirt</h3>
+                        <p class="price">$29.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="1">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jackets">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" alt="Premium Denim Jacket">
+                        <div class="product-overlay">
+                            <a href="product.html" class="btn btn-secondary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Denim Jacket</h3>
+                        <p class="price">$89.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400" alt="Casual Sneakers">
+                        <div class="product-overlay">
+                            <a href="product.html" class="btn btn-secondary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Sneakers</h3>
+                        <p class="price">$79.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="3">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dresses">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1516762689617-e1cfddf819d3?w=400" alt="Summer Dress">
+                        <div class="product-overlay">
+                            <a href="product.html" class="btn btn-secondary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Summer Dress</h3>
+                        <p class="price">$59.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="4">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shirts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400" alt="Black Polo Shirt">
+                        <div class="product-overlay">
+                            <a href="product.html" class="btn btn-secondary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Polo Shirt</h3>
+                        <p class="price">$39.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="5">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jackets">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=400" alt="Leather Jacket">
+                        <div class="product-overlay">
+                            <a href="product.html" class="btn btn-secondary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Jacket</h3>
+                        <p class="price">$149.99</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="6">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NEXO UNIFIED</h3>
+                    <p>Premium clothing for the modern lifestyle. Quality, style, and comfort in every piece.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="collection.html">Collections</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NEXO UNIFIED. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
