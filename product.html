@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic White T-Shirt - NEXO UNIFIED</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>NEXO UNIFIED</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="collection.html">Collections</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="Classic White T-Shirt">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=150" alt="View 1" onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1522706604291-210a56c3b376?w=150" alt="View 2" onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=150" alt="View 3" onclick="changeMainImage(this.src)">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1>Classic White T-Shirt</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="review-count">(124 reviews)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$29.99</span>
+                        <span class="original-price">$39.99</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Premium cotton t-shirt crafted for comfort and style. This classic white tee features a relaxed fit and soft fabric blend that's perfect for everyday wear.</p>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="size-selector">
+                            <h4>Size:</h4>
+                            <div class="size-options">
+                                <button class="size-btn" data-size="XS">XS</button>
+                                <button class="size-btn active" data-size="S">S</button>
+                                <button class="size-btn" data-size="M">M</button>
+                                <button class="size-btn" data-size="L">L</button>
+                                <button class="size-btn" data-size="XL">XL</button>
+                            </div>
+                        </div>
+                        
+                        <div class="color-selector">
+                            <h4>Color:</h4>
+                            <div class="color-options">
+                                <button class="color-btn active" data-color="white" style="background-color: white;"></button>
+                                <button class="color-btn" data-color="black" style="background-color: black;"></button>
+                                <button class="color-btn" data-color="gray" style="background-color: #808080;"></button>
+                            </div>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <h4>Quantity:</h4>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+                        <button class="btn btn-secondary wishlist-btn"><i class="far fa-heart"></i> Add to Wishlist</button>
+                    </div>
+                    
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free shipping over $50</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>30-day returns</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>1-year warranty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('description')">Description</button>
+                <button class="tab-btn" onclick="showTab('sizing')">Size Guide</button>
+                <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+            </div>
+            
+            <div class="tab-content">
+                <div id="description" class="tab-panel active">
+                    <h3>Product Description</h3>
+                    <p>Our Classic White T-Shirt is made from 100% premium cotton with a soft, breathable fabric that ensures all-day comfort. The relaxed fit and classic design make it versatile for any occasion.</p>
+                    <ul>
+                        <li>100% premium cotton construction</li>
+                        <li>Pre-shrunk for lasting fit</li>
+                        <li>Machine washable</li>
+                        <li>Reinforced seams for durability</li>
+                    </ul>
+                </div>
+                
+                <div id="sizing" class="tab-panel">
+                    <h3>Size Guide</h3>
+                    <table class="size-chart">
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Chest</th>
+                                <th>Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>XS</td>
+                                <td>34"</td>
+                                <td>26"</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>36"</td>
+                                <td>27"</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>38"</td>
+                                <td>28"</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>40"</td>
+                                <td>29"</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>42"</td>
+                                <td>30"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="reviews" class="tab-panel">
+                    <h3>Customer Reviews</h3>
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="reviewer-name">Sarah M.</div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p>"Perfect fit and amazing quality! The fabric is so soft and comfortable. Will definitely buy more colors."</p>
+                    </div>
+                    
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="reviewer-name">Mike D.</div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p>"Great basic tee. Fits true to size and the material feels premium. Good value for the price."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">You Might Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400" alt="Black Polo Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Polo Shirt</h3>
+                        <p class="price">$39.99</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" alt="Premium Denim Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Denim Jacket</h3>
+                        <p class="price">$89.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NEXO UNIFIED</h3>
+                    <p>Premium clothing for the modern lifestyle. Quality, style, and comfort in every piece.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="collection.html">Collections</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NEXO UNIFIED. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
